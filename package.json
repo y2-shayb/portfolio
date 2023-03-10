@@ -3,10 +3,12 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "portfolio landing page",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,html,scss,css,yaml.yml,md}\""
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -16,6 +18,7 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "prettier": "^2.8.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
   }
