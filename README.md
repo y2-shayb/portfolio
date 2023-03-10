@@ -10,5 +10,5 @@
 
 ### Code:
 
-- [app code]("/src")
-- [scripts code]("/scripts")
+- [app code](src)
+- [scripts code](scripts)
