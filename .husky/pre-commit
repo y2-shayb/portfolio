@@ -1,12 +1,4 @@
-#!/bin/bash
-. "$(dirname "$0")/_/husky.sh"
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
 
-
-function echo_green() {
-  echo -e "\033[32m$1\033[0m"
-}
-
-echo_green "run pre-commit"
-
-# run prettier check
-eval "bash scripts/format-check.sh"
+bash scripts/pre-commit
