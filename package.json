@@ -5,10 +5,11 @@
   "type": "module",
   "description": "portfolio landing page",
   "scripts": {
-    "dev": "vite",
+    "start": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,html,scss,css,yaml.yml,md}\""
+    "format": "bash scripts/format.sh",
+    "format:check": "bash scripts/format-check.sh"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -18,8 +19,14 @@
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react-swc": "^3.0.0",
+    "husky": "^8.0.3",
     "prettier": "^2.8.4",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "bash scripts/pre-commit.sh"
+    }
   }
 }

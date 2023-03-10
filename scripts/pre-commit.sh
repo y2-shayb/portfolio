@@ -1,0 +1,10 @@
+#!/bin/bash
+
+function echo_green() {
+  echo -e "\033[32m$1\033[0m"
+}
+
+echo_green "run pre-commit"
+
+# run prettier check
+eval "bash scripts/format-check.sh"

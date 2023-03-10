@@ -1,2 +1,7 @@
-# portfolio
-my portfolio
+# My Portfolio
+
+### Tech:
+
+- React
+- Vite
+- Prettier

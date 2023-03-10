@@ -1,0 +1,1 @@
+js,jsx,ts,tsx,json,html,scss,css,yaml.yml,md
